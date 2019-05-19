@@ -2,26 +2,26 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   namespace: workshop
-  name: mluukkai-example_app_docker
+  name: mluukkai-example-app-docker
   labels:
-    app: mluukkai-example_app_docker
+    app: mluukkai-example-app-docker
 
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
   selector:
     matchLabels:
-      app: mluukkai-example_app_docker
+      app: mluukkai-example-app-docker
 
   template:
     metadata:
       labels:
-        app: mluukkai-example_app_docker
+        app: mluukkai-example-app-docker
       annotations:
     spec:
       containers:
-        - image: gcr.io/unity-ads-workshop-test/mluukkai-example_app_docker:latest
-          name: mluukkai-example_app_docker
+        - image: gcr.io/unity-ads-workshop-test/mluukkai-example-app-docker:latest
+          name: mluukkai-example-app-docker
           imagePullPolicy: Always
           resources:
             requests:

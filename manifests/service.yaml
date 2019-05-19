@@ -2,8 +2,8 @@ kind: Service
 apiVersion: v1
 metadata:
   labels:
-    app: mluukkai-example_app_docker
-  name: mluukkai-example_app_docker
+    app: mluukkai-example-app-docker
+  name: mluukkai-example-app-docker
   namespace: workshop
 
 spec:
@@ -14,4 +14,4 @@ spec:
       protocol: TCP
       targetPort: 8072
   selector:
-    app: mluukkai-example_app_docker
+    app: mluukkai-example-app-docker
