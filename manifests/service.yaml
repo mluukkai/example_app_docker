@@ -1,0 +1,17 @@
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    app: mluukkai-example_app_docker
+  name: mluukkai-example_app_docker
+  namespace: workshop
+
+spec:
+  type: NodePort
+  ports:
+    - name: http
+      port: 8080
+      protocol: TCP
+      targetPort: 8072
+  selector:
+    app: mluukkai-example_app_docker
