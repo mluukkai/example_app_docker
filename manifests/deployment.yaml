@@ -22,7 +22,7 @@ spec:
       containers:
         - image: gcr.io/unity-ads-workshop-test/mluukkai-example_app_docker:latest
           name: mluukkai-example_app_docker
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           resources:
             requests:
               cpu: 0.1
