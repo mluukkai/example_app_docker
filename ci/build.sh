@@ -1,1 +1,1 @@
-docker build --tag ${image} .
+docker build --tag ${image}:${GIT_COMMIT} .
